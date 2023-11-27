@@ -1,0 +1,36 @@
+/* Với id thì sẽ dùng # với class sẽ dùng .
+id > class > tag name */
+#select-css{
+    color: brown;
+}
+
+.heading-1 {
+    color: aquamarine;
+}
+.paragrap{
+    color: rgba(51, 245, 2, 0.954);
+}
+
+h2 {
+    color: violet;
+}
+
+/* > dùng để tỏ đến cấp con  */
+/* dấu cách dùng để trỏ để bên trong và ko giới hạn cấp */
+/* khai báo càng chi tiết độ ưu tiên càng cao */
+.content > h2{
+    color: aqua;
+}
+/* ~ sau thẻ p nhưng cùng cấp và phỉa cùng 1  */
+.box p ~ ul{
+    color: rgb(1, 225, 151);
+}
+/* ko cùng cấp  */
+.box p ~ div ul{
+    color: blue;
+}
+
+/* nhóm những cái cùng nhau lại */
+.box p ~ ul , .box p ~ div ul{
+    color: aqua;
+}

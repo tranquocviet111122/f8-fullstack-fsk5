@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width:100% ;">
+        <!--  -->
+        <div style="width: 29%;float: left;">
+            <p>Username :</p>
+            <p>Password :</p>
+            <p>City of <br>Employment :</p>
+            <p>Web sever :</p>
+            <br>
+            <p>Please specify <br> your role :</p>
+            <br>
+            <p>Single Sign-on <br>
+                the folloiwing :
+            </p>
+        </div>
+        <!--  -->
+        <form action="https://api-gateway.fullstack.edu.vn/action_page.php" method="post">
+            <div style="width: 69%;float: left;margin-top: 15px;">
+                <div>
+                    <label for="name">
+                        <input type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Name"
+                        value=""
+                        style="width: 50%;"
+                        >
+                    </label>
+                </div>
+                <!--  -->
+                <div style="margin-top: 15px;">
+                    <label for="password">
+                        <input type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Mật khẩu"
+                        value=""
+                        style="width: 50%;"
+                        >
+                    </label>
+                </div>
+                <!--  -->
+                <div style="margin-top: 20px;">
+                    <label for="">
+                        <input type="text"
+                        id=""
+                        name=""
+                        placeholder=""
+                        value=""
+                        style="width: 50%;"
+                        >
+                    </label>
+                </div>
+                <!--  -->
+                <div style="margin-top: 20px;width: 100%;">
+                        <label for="message"></label>
+                        <select id="province" name="sever">
+                            <option value="1" selected>--Choose a sever--</option>
+                            <option value="2">Sever 1</option>
+                            <option value="3">Sever 2</option>
+                            <option value="4">Sever 3</option>
+                            <option value="5">Sever 4</option>
+                        </select>
+                    
+                </div>
+                <div style="margin-left: -50px;">
+                    <!--Radio  -->
+                <div style="margin-top: 20px;">
+                    <label for="admin">
+                        <input type="radio"
+                        id="admin"
+                        name="ad"
+                        placeholder=""
+                        value="admin"
+                        style="width: 10%;"
+                        >Admin
+                    </label>             
+                </div>
+                <!-- Radio  -->
+                <div>
+                    <label for="engineer">
+                        <input type="radio"
+                        id="engineer"
+                        name="ad"
+                        placeholder=""
+                        value="engineer"
+                        style="width: 10%;"
+                        >Engineer
+                    </label>
+                </div>
+                <!-- Radio -->
+                <div>
+                    <label for="manager">
+                        <input type="radio"
+                        id="manager"
+                        name="ad"
+                        placeholder=""
+                        value="manager"
+                        style="width: 10%;"
+                        >Manager
+                    </label>
+                </div>
+                <!-- Radio -->
+                <div>
+                    <label for="guest">
+                        <input type="radio"
+                        id="guest"
+                        name="ad"
+                        placeholder=""
+                        value="guest"
+                        style="width: 10%;"
+                        >Guest
+                    </label>
+                </div>
+                </div>
+                
+    
+                <!-- Check box -->
+                <div style="margin-top: 30px;">
+                    <label for="">
+                        <input type="checkbox" value="1" name="check[]" id="mail">
+                        Mail
+                    </label>
+                </div>
+                <!--  -->
+                <div>
+                    <label for="">
+                        <input type="checkbox" value="2" name="check[]" id="payroll">
+                        Payroll
+                    </label>
+                </div>
+                <!--  -->
+                <div>
+                    <label for="">
+                        <input type="checkbox" value="3" name="check[]" id="self">
+                        Self-service
+                    </label>
+                </div>
+                <!-- button -->
+                <div style="margin-top:50px ;">
+                    <button style="margin-right: 20px;">Login</button>
+                    <button type="reset">Reset</button>
+                </div>
+                
+    
+            </div>
+        </form>
+        
+    </div>
+</body>
+</html>
