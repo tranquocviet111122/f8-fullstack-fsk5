@@ -1,0 +1,149 @@
+/* css thẳng vào thẻ a có thuộc tính 
+taget = _blank */
+.links a[target="_blank"] {
+    color: brown;
+}
+/* css tất cả các thuộc tính có target */
+.links a[target] {
+    color: aquamarine;
+}
+/* css có dấu ^ là truy vấn tất cả các dữ liệu trong nó bắt đầu bằng chuỗi sau dấu = */
+.links a[href^="https://fullstack.edu.vn"] {
+    color: yellowgreen;
+}
+/* * chỉ ký tự có chứ nó */
+.links a[href*="https://fullstack.edu.vn/"] {
+    color: rgb(179, 50, 205);
+}
+/* css docs có chứa vietnamnet  */
+.links a[title~="vietnamnet"] {
+    color: rgb(105, 152, 9);
+}
+/* css vào đuôi có .vn/ */
+.links a[href$=".vn/"] {
+    color: rgb(84, 50, 205);
+}
+/* css 1 class khi không trùng tên  */
+[class^="col"] {
+    color: violet;
+}
+/* * tất cả các thành phần trong css */
+/* * {
+    color: rgb(140, 7, 229);
+} */
+/* > là cấp gần nhất 
+* là tất cả các thẻ bên trong */
+.products> *{
+    color: brown;
+}
+
+/* -------------------------------------- */
+
+/* Phần tử giả */
+/* before : trước
+after: sau
+before , after bắt buộc phải có content
+ở dạng Inline
+ */
+
+ h1::before{
+    content: "a";
+ }
+ h1::after{
+    content:"b";
+ }
+
+ /* 
+ first - letter : ký tự đầu tiên
+ first - line : chọn dòng đầu tiên
+ selection : chọn văn bản(bôi đen văn bản) *người dùng thao tác*
+ */
+
+ .content p::first-letter{
+    color: brown;
+    font-size: 50px;
+    /* ko thể bị bôi đen (cấp mạnh nhất ) */
+ }
+
+ .content p::first-line{
+    color: rgb(154, 95, 95);
+    font-size: 20px;
+ }
+/* chỉ chỉnh sửa được màu khi thao tác bôi đen */
+ .content p::selection {
+   background: black;
+   color: yellow;
+ }
+
+ .name {
+
+ }
+/* thay đổi định dạng placehoder trong form */
+ .name::placeholder {
+    color: burlywood;
+ }
+ /* ------------------------------------- */
+/* Lớp giả */
+/* active: click để hiển thị đã ấn vào nút
+, focus: focus vào thẻ đã click  
+hover : lắng nghe hành động chỏ chuột vào từ phía hover( chỉ sử dụng trên pc)
+*/
+.p-hover:hover {
+    color: aqua;
+}
+
+.btn:active {
+    /* click và hiển thị màu ở butotn ( giữ chuột)
+    Giúp người dùng biết là mình đã thao tác với nút đó chưa */
+    background: rgb(99, 59, 59);
+    color: red;
+}
+
+.name:focus::placeholder {
+    color: rgb(109, 62, 0);
+ }
+ 
+.btn-focus:focus{
+    color: violet;
+}
+
+/*lớp giả checked  */
+.checkbox input:checked + span {
+    color: red;
+}
+/* attribus */
+/* .checkbox input[disabled]+ span {
+    color: red;
+} */
+
+.checkbox input:disabled + span {
+    color:rgba(255, 0, 0, 0.098);
+}
+/* loại trừ ra class .gnore-item */
+.checkbox div:not(.ignore-item) span {
+    color: aquamarine;
+}
+/* Chỉ chọn ignore-item  */
+.checkbox div.ignore-item span {
+    color: aquamarine;
+}
+/* thành phần đầu tiên(ở đây là h2 đầu tiên)
+*/
+.producst-h2 h2:first-child {
+    color: brown;
+}
+/* thành phần cuối cùng */
+.producst-h2 h2:last-child {
+    color: rgb(127, 120, 120);
+}
+/* cùng là h2 mặc dù trước nó bị che bởi thẻ h3 */
+.producst-h3 h2:first-of-type {
+    color: aquamarine;
+}
+/* last : sau */
+.producst-h3 h2:last-of-type {
+    color: aquamarine;
+}
+
+/* nth-child */
+/* nth-of-type */

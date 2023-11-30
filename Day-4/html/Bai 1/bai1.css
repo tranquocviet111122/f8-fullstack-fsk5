@@ -1,0 +1,39 @@
+* {
+    color: white;
+}
+.footer {
+    background-color: rgb(52, 86, 87);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+span {
+    color: rgba(255, 170, 0, 0.708);
+ }
+
+ .footer-body input {
+    font-size:20px; 
+    border-radius: 5px;
+    border: none;
+    padding-bottom: 5px;
+ }
+ .footer-body input::placeholder{
+    font-size: 13px;
+    padding: 10px;
+ }
+ .footer-body input:hover::placeholder {
+    color:  rgba(255, 170, 0, 0.708);
+    background-color: #ddd;
+ }
+
+ .footer-body button {
+    color: black;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    background: yellow;
+ }
+ .footer-body button:hover{
+    color: #fff ;
+    background-color:rgba(255, 170, 0, 0.708);
+ }

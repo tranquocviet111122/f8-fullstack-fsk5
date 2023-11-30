@@ -1,7 +1,7 @@
 /* Với id thì sẽ dùng # với class sẽ dùng .
 id > class > tag name */
 #select-css{
-    color: brown;
+    color: ;
 }
 
 .heading-1 {
@@ -12,7 +12,7 @@ id > class > tag name */
 }
 
 h2 {
-    color: violet;
+    color: ;
 }
 
 /* > dùng để tỏ đến cấp con  */
@@ -33,4 +33,16 @@ h2 {
 /* nhóm những cái cùng nhau lại */
 .box p ~ ul , .box p ~ div ul{
     color: aqua;
+}
+/* Dấu + là ngay sau nó */
+/* .box-1 p + h2 {
+    color: brown;
+} */
+
+/* .box-1 p+ h2 + h2 + h2{
+    color: aqua;
+} */
+/* h2 sau tất cả đổi màu s */
+.box-1 h2 + h2{
+    color: rgb(153, 61, 51);
 }

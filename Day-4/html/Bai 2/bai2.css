@@ -1,0 +1,72 @@
+.body {
+    /* width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 80px;
+    text-align: center; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+@font-face {
+    font-family: "BebasNeue";
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: "Alfa Slab One";
+    src: url(../fonts/AlfaSlabOne-Regular.ttf);
+}
+h1, h2 {
+    text-align: center;
+}
+
+
+h2 {
+    font-family:"Alfa Slab One";
+    font-size: 50px;
+}
+
+h1, input{
+    font-family: "BebasNeue";
+}
+
+
+input {
+    font-size: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.345);
+    border-radius:5px ;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input:hover {
+    border: 1px solid rgba(172, 27, 27, 0.345);
+    border-radius: 10px;
+}
+input::placeholder {
+   color: black;
+   padding: 20px;
+   font-size: 20px;
+   justify-content: center;
+}
+input:hover::placeholder {
+    color: rgba(0, 0, 0, 0.075);
+}
+button {
+    font-size: 20px;
+    width:100% ;
+    border-radius: 5px;
+    border: none;
+    font-family: "Alfa Slab One";
+    padding: 6px;
+    color: white;
+    margin-top: 10px;
+    background-color: rgb(121, 10, 10);
+    text-align: center;
+}
+
+button:hover {
+    color: black;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.345);
+}
