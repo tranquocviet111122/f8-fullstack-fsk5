@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "Losbster";
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+@font-face {
+    font-family: "Lato";
+    src: url(../fonts/lato-regular.ttf);
+}
+html {
+    font-family: "Lato";
+}
+h1 {
+    font-weight: 900;
+    font-family: "SNV-Fontbox";
+    font-size: 4em;
+}
+span {
+    color: red;
+    
+}
+.contents {
+    display: flex;
+    width: 50%;
+    position: relative;
+    margin-top: 2em;
+}
+.contents:hover .content-left button{
+    background-color: black;
+}
+.contents:hover .content-right i {
+    color: black;
+}
+
+form:focus-within .content-left {
+background-color: rgba(0, 0, 0, 0.419);
+border-radius: 5px;
+}
+form:focus-within .content-right i{
+color: black;   
+}
+.content-left button {
+    background-color: rgba(0, 0, 0, 0.34);
+    border: none; 
+    padding: 12px;
+    border-radius: 5px;
+}
+.content-left-mess button {
+ padding-bottom: 531%;
+ background-color: rgba(0, 0, 0, 0.34);
+}
+.content-left button i {
+font-size:2em;
+border: none;
+color: white;
+}
+.content-mid input , .subject {
+font-size: 1.6em;
+padding: 10px;
+width: 150%;
+padding-left: 4em;
+border: 2px solid rgba(0, 0, 0, 0.449);
+border-radius: 5px;
+}
+.select {
+    margin-left: 75%;
+ display: inline-block;
+ border-radius: 2px;
+
+}
+.content-right i {
+    color: rgba(0, 0, 0, 0.501);
+    
+}
+.content-mid input::placeholder {
+font-size: 0.7em;
+}
+.content-left {
+position:absolute;
+
+}
+
+.content-right , .content-right-close {
+    position: absolute;
+    right: 10px;
+    bottom: 35%;
+}
+
+.content-right-close {
+    display: none;
+}
+
+form:focus-within .content-right-close{
+    display: inline;
+}
+
+form:focus-within .content-right {
+    display: none;
+}
+
+textarea::placeholder {
+   padding-left: 5em;
+   font-size: 1.5em;
+}
+textarea:focus-within {
+    padding-left: 5em;
+}
+.checks {
+    padding-right: 20%;
+}
+
+
+.bottoms {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.btn-send {
+    font-size: 0.7em;
+    padding: 5px 25px 5px 25px;
+    background-color: rgba(255, 0, 0, 0.589);
+    border: none;
+    color: white;
+}

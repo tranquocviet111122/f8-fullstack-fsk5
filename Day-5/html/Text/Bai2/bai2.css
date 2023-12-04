@@ -1,0 +1,52 @@
+.content-click .headline-click {
+    padding: 4px;
+    display: none ;
+}
+.content-click .headline-click-2{
+   padding-right:5px; 
+    /* display: none; */
+
+}
+* {
+    text-decoration: none;
+}
+.contents {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.content {
+    display: none;
+}
+.contents:focus-within .headline-click-2  {
+    display: none;
+}
+.contents:focus-within .content ,.contents:focus-within .headline-click {
+    display: inline;
+   
+
+}
+.content-text {
+    margin-top: px;
+    color: white;
+}
+.content-text a {
+    color: white;
+}
+.content-click {
+width: 50%;
+background-color:#D95825;
+display: flex;
+color: white;
+margin-bottom: 20px;
+padding: 10px;
+}
+
+.content p {
+    width: 50%;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+span {
+    color: red;
+}

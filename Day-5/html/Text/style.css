@@ -1,0 +1,33 @@
+/* Color: Thay đổi màu chữ, màu văn bản */
+/* color : 
+-tên màu
+-mã màu hexa ( Color Zilla cài trên trình duyệt để chọn )
+-rgb
+-hls
+
+color opacity
+color transparent
+các giá trị mặc định trong tất cả các thuộc tính css
+-initial : giá trị mặc định của trình duyệt
+-inherit : giá tị kế thừa element cha
+*/
+.title {
+    color: rgb(75, 105, 131);
+}
+/* initial 
+Khi hover vào màu sẽ về màu mặc định của trình duyệt
+*/
+title:hover {
+    color: initial;
+}
+.sub-title {
+    color: rgb(168, 107, 27);
+}
+.sub-title2 {
+    margin-top: -30px;
+    font-style: italic;
+    color: rgba(168, 107, 27, 0.265);
+}
+p {
+    color: #bc1682a9;
+}

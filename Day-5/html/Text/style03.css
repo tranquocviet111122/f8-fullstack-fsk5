@@ -1,0 +1,27 @@
+/* Thay đổi font chữ cho văn bản
+-font-family : tên font 
+serif : font có chân
+sans-serif: font ko có chân
+*/
+@font-face {
+    font-family: 'Lato';
+    src: url(./fonts/lato-light.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(./fonts/lato-regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(./fonts/lato-bold.ttf);
+    font-weight: 700;
+}
+
+body {
+
+    font-family: 'Lato';
+    font-weight:400;
+    font-style: italic;
+}

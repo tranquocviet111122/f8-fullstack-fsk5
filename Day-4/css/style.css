@@ -146,4 +146,14 @@ hover : lắng nghe hành động chỏ chuột vào từ phía hover( chỉ s�
 }
 
 /* nth-child */
-/* nth-of-type */
+/* css vao thuộc tính chỉ định */
+/* được tính theo giá trị n hoặc giá trị số ( n, 2n , 2n +1) */
+
+/* .producstes h2:nth-child(2n ){
+    color: teal;
+} */
+/* nth-of-type giống như nth-child và nó chỉ slect vào thẻ chỉ định  */
+/* Các thành phần 1 trang và ngang hàng nhau */
+.producstes h2:nth-of-type(2n +1){
+    color: teal;
+}

@@ -1,0 +1,25 @@
+body {
+    /* khoảng cách giữa các ký tự */
+    /* letter-spacing: 4px; */
+    /* khoảng cách giữa các từ */
+    /* word-spacing: 5px; */
+    /* dãn dòng (1.5 tương đối theo font size) */
+    /* line-height: 1.5; */
+    /* gach chân text */
+    /* text-decoration: line-through ; */
+    /* thay đổi chữ in hoa , in thường */
+    /* text-transform:capitalize; */
+    /* thụt lề đầu văn bản */
+    /* text-indent: 20px; */
+    /* ngắt dòng khi quá dài */
+    /* word-wrap: break-word; */
+    /* word-break: break-all; */
+    /* white-space: ; */
+
+/* căn chỉnh văn bản(không thể can thiệp vào thẻ inline */
+    /* text-align: center; */
+}
+
+span {
+    text-align: justify;
+}
