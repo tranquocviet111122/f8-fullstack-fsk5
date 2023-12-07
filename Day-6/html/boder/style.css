@@ -1,0 +1,46 @@
+/* .box {
+    width: 200px;
+    height: 200px;
+    border-width: 5px 10px 20px 30px ;
+    border-style: solid dashed double;
+    border-color: aliceblue antiquewhite aqua aquamarine;
+} */
+/* shape css : tìm hiểu */
+
+/* with, heght : ko áp dụng với inline */
+/* đơn vị vw: viewport width */
+/* đơn vị vh: viewport height */
+
+/* body {
+    height: 2000px;
+}
+.main {
+    background-color: yellow;
+    height: 300px;
+    width: 400px;
+}
+.box {
+width: 50%;
+height:50vh;
+background-color: bisque;
+}  */
+
+.image {
+    width: 300px;
+    border: 2px solid red;
+    /* bỏ chiều cao dòng */
+    line-height: 0;
+    /* font-size: 0; */
+    }
+
+
+.image img {
+    max-width: 100%;
+    min-width: 50%;
+    
+}
+
+.image img:hover {
+    /* opacity: 0; */
+    filter: grayscale(100%);
+}

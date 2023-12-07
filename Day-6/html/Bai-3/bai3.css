@@ -1,0 +1,127 @@
+body {
+    background-image: url('http://uiwebsoft.com/justlog/login-one/images/login-bg2.jpg');
+    background-position:center -240px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+}
+
+.login-form {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 60%;
+    display: flex;
+    text-align: center;
+}
+
+.row-left {
+    max-width: 40%;
+    border: none;
+    background-color: #ff574d;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 10px;
+    position: relative;
+}
+
+.row-right {
+    max-width: 70%;
+    text-align: center;
+    border: none;
+    background-color: #fffffffa;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 20px;
+
+}
+.row-right div span a {
+    padding-left: 200px;
+}
+.row-right div span {
+    margin-left: 0px;
+}
+.row-right div , .row-left div  {
+    padding: 10px;
+}
+
+.inputs {
+    font-size: 14px;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    border: 1px solid #71717139;
+    border-radius: 5px;
+}
+
+.inputs::placeholder {
+color: #717171;
+padding: 20px;
+}
+
+.btn-login button {
+    font-size: 14px;
+    width: 100%;
+    padding: 10px 0 10px 0;
+    border: none;   
+    background-color: #ff574d;
+    border-radius: 5px;
+    color: white;
+}
+
+.row-right div span {
+    color: #ff574d;
+}
+
+.dash {
+    border-top: 1.5px solid #ff574d;
+    width: 25px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+}
+
+.row-left> * {
+    color: white;
+}
+
+.btn-read button {
+    font-size: 14px;
+    width: 50%;
+    padding: 10px 0 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #f84137;
+}
+
+.btn-icon button {
+    padding: 10px;
+    border: none;
+    background-color: #f84137;
+    margin: 5px;
+}
+.btn-icon button i {
+    color: white;
+}
+.logo {
+    margin-right: 10px;
+}
+
+.fa-solid-left {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #f84137;
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    border: none;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.092);
+}

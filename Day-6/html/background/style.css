@@ -1,0 +1,32 @@
+/* background-position : thiết lập vị trí của ảnh ( left top mặc định ) */
+/* background-size: cover; tự thiết lập size     */
+/* background-attachment: fixed; cố định backgrond khi lăn chuột */
+body {
+    /* background-color: rgb(0, 0, 0); */
+    /* background-image:url('https://images.unsplash.com/photo-1508361001413-7a9dca21d08a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') ;
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: cover;
+    height:1000vh;
+    background-color:rgba(44, 39, 50, 0.184) ;
+    background-attachment: fixed; */
+    /* background-clip: tìm hiểu; */
+    /* Viết tắt tất cả các thuộc tính trên trong 1 thẻ background */
+    background: black url('https://images.unsplash.com/photo-1508361001413-7a9dca21d08a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat  left top / cover fixed;
+    
+    ;
+}
+.box {
+    background-color: rgba(0, 255, 255, 0.337);
+    background-image: url('https://images.unsplash.com/photo-1540427969750-1424f2fa0af8?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    color: white;
+    /* backgroud-repeat : thiết lập chế độ lặp của background-img*/
+    height: 500vh;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 200px;
+}
+
+/* https://picsum.photos/ lorem hinh anh 
+unsplash.com
+*/
