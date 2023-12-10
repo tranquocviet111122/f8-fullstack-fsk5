@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* box-sizing: cố định kích thước theo cái gì  */
+.box {
+    width: 50%;
+    height: auto;
+    /* background-color: aqua; */
+    /* color: white; */
+    margin: 10px;
+    /* padding: 30px; */
+    border: 1px solid rebeccapurple;
+    box-sizing: border-box;
+    font-size: 0;
+}
+.box .col {
+    /* tính kích thước  bằng hàm calc */
+    width: calc(100% / 3 - 20px);
+    display: inline-block;
+    font: initial;
+    border: 1px solid rgb(228, 220, 236);
+
+    padding: 10px 20px;
+    background: rgba(255, 0, 0, 0.196);
+}

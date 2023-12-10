@@ -1,0 +1,42 @@
+
+/*overflow: quyết định nội dung chàn ra ngoài sẽ như thế nào
++ giữ nguyễn ( visibale)
++ ẩn đi ( hidden)
++tạo thanh cuộn  ( scroll, auto )
+*/
+/* .box {
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+.box p {
+    width: 300px;
+} */
+
+
+/* padding, margin: 
+   với block là 4 hướng 
+    với inline là 2 hướng trái phải
+
+*/
+
+.box {
+    width: 200px ;
+    height: 200px;
+    border: 1px solid black;
+    padding: 50px 50px 50px 50px;
+}
+
+.box p {
+    margin: 0px;
+    border: 1px solid rgb(77, 68, 55);
+}
+.list span {
+    border: 1px solid black;
+    padding: 30px;
+    display:inline-block;
+}

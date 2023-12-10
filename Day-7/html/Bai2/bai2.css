@@ -1,0 +1,82 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Asap', sans-serif;
+}
+
+.header {
+    background-image: url(./imgs/backg.jpg.jpg);
+    background-position: left top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height:300px;
+    position: relative;
+}
+.navbar {
+    display: flex;
+
+}
+h1 {
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+.navbar-id {
+    margin-left: auto;
+    margin-right: 48%;
+    margin-top: 11%;
+}
+.navbar-id  p {
+    float: left;
+    padding-left: 50PX;
+    color: #fff;
+    font-size: 14.5px;
+}
+.navbar-id span {
+    font-size: 150%;
+    font-weight: 600;
+}
+.navbar-logo {
+    background-color: #fff;
+    width: 15%;
+    height: auto;
+    text-align: center;
+    bottom: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    border-top-left-radius:10px ;
+    border-top-right-radius:10px ;
+}
+.navbar-logo img {
+    height: auto;
+    width: 200px;
+    padding: 50px 20px 0px 20px;
+}
+
+.list {
+    display: flex;
+    padding: 20px 100px 20px 40px;
+    text-transform: uppercase;
+    float:right;
+    cursor: pointer;
+
+}
+
+.list p {
+    margin-left: 20px;
+    font-weight: 700;
+}
+
+.list p span {
+    border-bottom:3px solid red ; 
+    padding-bottom: 10px;
+    color: red;
+}
