@@ -1,0 +1,193 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+.body {
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.grow {
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.456);
+    height:auto;
+}
+.grow-1 {
+    width: 40%;
+}
+
+.shopping {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.145);
+    padding: 20px;
+    
+}
+.header-shopping-icon button i {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-shopping-icon button {
+    border-radius: 50%;
+    background-color: red;
+    border: none;
+    height: 30px;
+    width: 30px;
+}
+
+.header-shopping {
+    position: relative;
+    text-align: center;
+}
+
+.header-shopping p {
+    position: absolute;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: rgba(0, 0, 255, 0.704);
+    border: none;
+    top: -10px;
+    right: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.navbar .navbar-item:first-child {
+    border-bottom:1px solid rgba(0, 0, 0, 0.3) ;
+
+}
+.navbar-item {
+    display: flex;
+    padding: 30px;
+    position: relative;
+}
+
+.img-item img{
+    width: 100px;
+    height: auto;
+    background-color: rgba(221, 215, 99, 0.221);
+    padding: 20px;
+    border-radius: 5px;
+}
+.name-item {
+    padding: 15px;
+    color: rgba(0, 0, 0, 0.563);
+}
+
+.name-close p {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+}
+
+.bulk-price {
+    margin-top: 10%;
+    display: flex;
+    width: 150%;
+}
+
+.bulks {
+    width: 40%;
+    border: 1px solid rgba(0, 0, 0, 0.563);
+    height: auto;
+    border-radius: 50px;
+    
+}
+
+.bulk {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+
+.price  {
+    width: 50%;
+    padding: 0px 10px;
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.768);
+}
+
+.navbar-subtotal {
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-subtotal h3 {
+    font-size: 25px;
+}
+.navbar-subtotal h3:last-child {
+    color: red;
+}
+
+.navbar-p {
+    padding: 0px 30px;
+    text-transform: capitalize;
+    color:rgba(0, 0, 0, 0.563) ;
+}
+
+.navbar-btn {
+    padding: 10px 30px;
+    text-align: center;
+   
+}
+
+.navbar-btn button{
+    padding: 20px;
+    width: 100%;
+    text-transform: capitalize;
+    background-color: #fff;
+    color:rgba(0, 0, 0, 0.563) ;
+    border-color:rgba(0, 0, 0, 0.563) ;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.navbar-btn-1 button {
+    background-color: blue;
+    color: #fff;
+    border-color: blue;
+}
+
+.navbar-item-car {
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
+.navbar-item-car i {
+    font-size: 30px;
+    padding: 20px;
+
+}
+
+.navbar-item-shipping {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+}

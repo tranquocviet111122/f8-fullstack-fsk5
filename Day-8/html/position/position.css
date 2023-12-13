@@ -1,0 +1,54 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 2000px;
+}
+.box {
+    border:  1px solid black;
+    width: 400px;
+    margin: 30px auto;
+    padding: 30px;
+    
+}
+
+.box .content {
+    border:  1px solid black;
+    width: 200px;
+    position: relative;
+}
+
+.box .content .item {
+    border:  3px solid rgb(126, 10, 10);
+    background-color: aquamarine;
+    width: 200px;
+    height: 50px;
+}
+ /* z-index chỉ hoạt động khi có poistion */
+.box .content .item:nth-child(1){
+    position: relative;
+    z-index: 1;
+}
+/* inset: bao gồm top lef bottom right */
+.box .content .item:nth-child(2) {
+    /* thuộc tính position : thay đổi vị trí các phần tử */
+    position: relative;
+    top: -20px;
+    left:calc(100% - 200px);
+    /* position: absolute;
+    right: 40%;
+    
+    bottom: 0;
+    border: none;
+    background-color: rgba(127, 255, 212, 0.525);
+    opacity: 0.7; */
+    
+    /* fixed: cố định thành phần ngay cả khi thanh cuộn di chuyển */
+    /* position: fixed; */
+}
+

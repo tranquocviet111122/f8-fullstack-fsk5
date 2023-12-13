@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    border: 1px solid black;
+    margin: 30px auto;
+    width: 400px;
+}
+
+.box ul {
+    /* list-style-position:inside ;
+    list-style-type: none; */
+    list-style: inside none;
+}
+/* Sử dụng hình ảnh để thay thế trước li */
+.box ul li::before {
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/32/32213.png);
+    background-size: 10px;
+    background-repeat: no-repeat;
+    margin: 10px;
+    line-height: 1.5;
+    /* vertical -align : căn chỉnh theo chiều dọc */
+    vertical-align: middle;
+}
+
+.box ul li:hover::before {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGoXV-OUFcdT0td8kZN66RqGoXRYwy7KmTHQ&usqp=CAU);
+
+}

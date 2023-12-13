@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: rgb(8, 8, 8);
+    background-color: rgba(238, 130, 238, 0.03);
+    
+}
+
+.title {
+    display: inline;
+    margin-right: 2%;
+    /*visibility: thành phần sẽ mất tác dụng nhưng không mất không gian */
+    /* visibility: hidden; */
+    cursor: pointer;
+}
+
+.title:hover {
+    opacity: 0.5;
+}
+
+.link {
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    display: inline-block;
+    
+}
