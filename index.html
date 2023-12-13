@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Danh sách bài tập</title>
 </head>
 <body>
@@ -87,12 +88,47 @@
         <!-- Day-8 -->
          <div>
             <h2>Bài Tập Day-8</h2>
-            <a href="./Day-8/html/Bai1/bai1.html">Bài 1</a>
-            <br>    <br>
-            <a href="./Day-8/html/Bai2/bai2.html">Bài 2</a>
-            <br>    <br>
-            <a href="./Day-8/html/Bai3/bai3.html">Bài 3</a>
-            <br>    <br>
+            <div class="item">
+                <i class="fa-solid fa-arrow-right"></i>
+                <a href="./Day-8/html/Bai1/bai1.html" >Bài 1</a>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-arrow-right"></i>
+                <a href="./Day-8/html/Bai2/bai2.html " >Bài 2</a>
+            </div>
+            <div class="item">
+                <i class="fa-solid fa-arrow-right"></i>
+                <a href="./Day-8/html/Bai3/bai3.html" >Bài 3</a>
+            </div>
         </div>
 </body>
+<style>
+   h1, h2 {
+    cursor: wait;
+   }
+    .item {
+        line-height: 2;
+        display: flex;
+    }
+    .item i{
+        display: flex;
+        margin-right: 20px;
+        align-items: center;
+        color: #fff;
+    }
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 120%;
+    }
+   a:hover {
+    color: hsl(309, 100%, 63%);
+    font-weight: 900;
+   }
+   .item:hover i {
+    margin-left: 20px;
+    font-size: 150%;
+    color: hsl(309, 100%, 63%);
+   }
+</style>
 </html>
