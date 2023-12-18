@@ -1,0 +1,46 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+.songs {
+    width: 50%;
+    margin: 30px auto;
+    border: 1px solid black;
+    counter-reset: song-number;
+}
+/* chuyển thành dạng list-item( thay thế cho thẻ ul.li */
+/* .songs h2{
+
+    display: list-item;
+    list-style: inside decimal-leading-zero;
+} */
+
+/* counter */
+.songs h2 {
+    counter-increment: song-number;
+}
+
+.songs h2::before {
+    content: counter(song-number)"." "#";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: aquamarine;
+    font-size: 1rem;
+    text-align: center;
+    color: aliceblue;
+    border-radius:50% ;
+    vertical-align: middle;
+    margin-bottom: 5px;
+       
+}
+
+/* các bước tạo bộ đếm trong css 
+- Khởi tạo bộ đếm ( tên là gì , nó ở đâu )  counter-reset: song-number;
+- Chạy bộ đếm( tên gì , ở đâu) counter-increment: song-number;
+- hiển thị bộ đếm  content: counter(song-number) "#";
+*/

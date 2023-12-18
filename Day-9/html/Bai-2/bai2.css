@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family:'Space Grotesk';
+}
+@font-face {
+    font-family:'Space Grotesk';
+    
+    src: url(./font/SpaceGrotesk-VariableFont_wght.ttf);
+}
+.day-9 {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: auto;
+    margin: 0rem auto;
+}
+
+.navbar {
+    width: 30%;
+    height: 20rem;
+    border: 1px solid rgba(0, 0, 0, 0.194);
+    padding: 2% 3%;
+    margin: 2%;
+    position: relative;
+    
+}
+.navbar i {
+    font-size: 3rem;
+    color: hsl(18, 29%, 49%);
+    transition: font-size 0.7s;
+}
+.navbar h2 {
+    padding: 1.5rem 0%;
+    /* transition: height 2s 5s linear 2s; */
+}
+
+.navbar:hover {
+    
+    background-image: url(https://picsum.photos/536/354);  
+    position: relative;
+    z-index: 1; 
+    height: 20rem; 
+    border: none;
+    transition: linear 0.7s;    
+}
+.navbar:hover::after{
+    content: "";
+    width: 100%;
+    height:100%;
+    position: absolute;
+    background-color:hsla(18, 29%, 49%, 0.55) ;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    transition: linear 0.7s;
+
+}
+.navbar:hover::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height:90%;
+    top:5.2%;
+    left: 5.5%;
+    border: 1.5px solid rgb(255, 255, 255);
+    z-index: -1;
+    transition: linear 0.7s;
+}
+.navbar:hover i{
+    font-size: 0;
+}
+
+.navbar:hover h2{
+    transition: all 0.5s  ease-out;
+    border: none;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    padding-top: 0;
+    cursor:context-menu;
+}
+.navbar:hover p{
+    width: 100%;
+    height: auto;
+    color: #fff;
+    cursor: auto;
+   margin-bottom:  3rem;
+    border: none;
+}
+
+.navbar:hover .navbar-none {
+ 
+   visibility: inherit;
+   cursor: grab;
+}
+
+.navbar-none {
+    visibility: hidden;
+    
+}
+.navbar-none h3{
+    text-transform: capitalize;
+    color: #fff;
+  
+}
+
+.navbar-none h3::after {
+    content: "\f061";
+    font-family: 'Font Awesome 6 Free';
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    padding: 0.5rem;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    margin-left: 1rem;
+}
+.navbar-none h3:hover::after {
+    background-color: #fff;
+    color: black;
+
+}

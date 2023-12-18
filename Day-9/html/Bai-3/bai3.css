@@ -1,0 +1,119 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box  ;
+}
+.day-9 {
+    width: 90%;
+    margin: 5px auto;
+}
+h1, p {
+    padding: 1%;
+    text-align: center;
+}
+.grow {
+    display: flex;
+}
+.content {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.content input {
+    padding: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 1rem;
+    width: 100%;
+    font-size: 1rem;
+}
+.content label {
+    position: absolute;
+    top: 2.5rem;
+    left: 3.5rem;
+    color: rgba(0, 0, 0, 0.500);
+    transform: translateY();
+    color: #666;
+    transition: transform, font-size;
+    transition-duration: 0.3s;
+    pointer-events: none;
+}
+.content input:focus + label {
+    transform: translateY(-15px);
+    font-size: 1rem;
+}
+.content input:focus {
+    border-color:blue ;
+}
+.content select {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 1rem;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.content select option {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.719);
+}
+.content select:focus, .content select option:focus {
+    border-color: blue;
+}
+
+
+.content select option:disabled {
+    color: rgb(0, 0, 0);
+
+} 
+.content-message label textarea::placeholder {
+    font-size: 1rem;
+}
+.content-message {
+    position: relative;
+}
+.content-message textarea {
+   
+    width: 98%;
+    margin: 1rem;
+}
+.content-message label {
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    transform: translateY(-80%);
+    color: #666;
+    transition: transform, font-size;
+    transition-duration: 0.3s;
+    pointer-events: none;
+}
+
+.content-message textarea:focus {
+    padding: 30px 20px;
+    border-color: blue;
+    border-radius: 5px;
+}
+
+.content-message textarea:focus + label {
+    transform: translateY(-35px);
+    font-size: 1rem;
+}
+
+button {
+    display: flex;
+    margin: 5px auto;
+    padding: 20px 30px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    color: #fff;
+    background-color: blue;
+    border: none
+}
+
+button:hover {
+    opacity: 0.5;
+}

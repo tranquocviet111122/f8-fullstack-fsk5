@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    font-family: 'Inter';
+}
+@font-face {
+    font-family:'Space Grotesk';
+    ;
+    src: url(./font/SpaceGrotesk-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Inter';
+    src: url(./font/Inter-VariableFont_slnt\,wght.ttf);
+}
+.day-9 {
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+}
+
+
+
+.content {
+    display: flex;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.content .item {
+    width: 50%;
+    text-align: right;
+    
+}
+.content .item p {
+    padding: 1rem 0rem;
+}
+.content .item button {
+    border-radius: 20px;
+    padding: 0.5rem 0.8rem;
+    border: none;
+    font-weight: 700
+}
+.content .item button,.content .item p {
+    color: rgba(0, 0, 0, 0.758);
+}
+.content .item h2,
+.content .item button
+{
+    font-family:'Space Grotesk' ;
+    text-transform: capitalize;
+}
+/* .content .item button:hover{
+    color: #fff;
+    background-color: rgb(162, 111, 90);
+    cursor: pointer;
+} */
+.content::after {
+    content: "";
+    border-left: 1px solid rgba(0, 0, 0, 0.205);
+    height: 8rem;
+    position: absolute;
+    bottom: -2.8rem;
+    right: 45.22%;
+}
+.content .time {
+    position: relative;
+    margin-left: 3rem;
+    padding: 0.5rem;
+    
+}
+.content .time::before {
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    left: -2rem;
+    background-color: rgba(0, 0, 0, 0.057);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.087);
+}
+
+.content .time::after {
+    content: "";
+    width: 0.6rem;
+    height: 0.6rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    left: -1.55rem;
+    top: 0.95rem;
+    background-color: rgb(84, 215, 191);
+}
+/* ---------- */
+.navbar-img {
+    text-align: right;
+    position: relative;
+    margin-left: 10rem;
+}
+.navbar-img .img-1 {
+    width: 30vw;
+    height: 70vh;
+    display: flex;
+    justify-content: right;
+}
+.navbar-img .img-2 {
+    position: absolute;
+    width: 20vw;
+    height: 60vh;
+    top: 10rem;
+    left: -10rem; 
+}
+.navbar-img p {
+    position: absolute;
+    background-color: blanchedalmond;
+    padding: 18rem 1.5rem 0rem 0rem;
+    display: inline-block;
+    justify-content: space-around;
+    width: 18vw;
+    height: 57vh;
+    top: 10.75rem;
+    left: -9rem; 
+    font-size: 5rem;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-family: 'Space Grotesk';
+    line-height: 2rem;
+    opacity:1 ;
+}
+.navbar-img p span {
+    font-size: 1.5rem;
+}
+.content:hover .item button{
+    color: #fff;
+    background-color: rgb(162, 111, 90);
+    cursor: pointer;
+}

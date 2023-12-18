@@ -1,0 +1,47 @@
+
+
+
+.box h2.facebook::before {
+    content: "\f09a ";
+    font-family: 'Font Awesome 6 Brands';
+    
+}
+
+.box h2.zalo::before {
+    content: "\e61b ";
+    font-family: 'Font Awesome 6 Brands';
+    font-family: 'Font Awesome 5 Brands';
+}
+
+.content label input {
+    /* visibility: hidden; */
+}
+.content {
+    position: relative;
+}
+
+.content label::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    top:0.3rem;
+    left: 0.43rem;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    background-color: rgba(0, 0, 0, 0.301);
+}
+
+
+
+
+
+.check {
+width: 12px;
+height: 6px;
+border: 2px solid;
+/* xoay khối rotate */
+rotate: -45deg;
+border-color: transparent transparent red red;
+}
