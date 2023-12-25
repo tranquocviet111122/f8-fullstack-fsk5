@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+/* .btn {
+    padding: 30px;
+    display: block;
+    margin: 5% auto;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(9, 243, 165);
+    color: rgb(0, 0, 0);
+    border-radius: 99px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn span {
+    position: relative;
+    font-weight: 900;
+    z-index: 1;
+}
+
+.btn::before{
+    content: '';
+    transition: 1s ease-in-out;
+    transition-property: left;
+    position: absolute;
+    top:0;
+    left:-10%;
+    bottom: 0;
+    right: 0;
+    right:0;
+    width: 80px;
+    height:80px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+}
+
+.btn:focus::before {
+    left: 50%;
+} */
+/* .btn::after {
+    content: '';
+    transition: 0.3s ease;
+    transition-property: left;
+    position: absolute;
+    top:0;
+    left: 100%;
+    bottom: 0;
+    right:0;
+    background-color: rgb(173, 71, 71);
+}
+.btn:hover::after {
+    left: 50%;
+} */
+
+
+/* .click span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+} */
+
+.toggle {
+    display: block;
+    height: 40px;
+    width: 100px;
+    border-radius: 99px;
+    background-color: black;
+    margin: 30px auto;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.toggle .btn {
+    display: block;
+    position: absolute;
+    background-color: aliceblue;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    left: 1px;
+    top: 1px;
+    transition: 0.5s ease;
+    transition-property: left;
+    z-index: 1;
+}
+.toggle .bg {
+    position: absolute;
+    background: transparent;
+    inset: 0;
+    transition: background 0.5s ease;
+}
+.toggle input:checked ~ .bg {
+    background: green;
+}
+.toggle input:checked + .btn {
+    left: calc(100% - 39px);
+
+}
+
+.content h1 {
+   position: relative;
+
+}
+
+
+.content h1 > span {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    color: yellow;
+    transition: top 2s ease;
+    overflow: hidden;
+}
+
+.content h1 > span > span {
+    color: blue;
+    position: absolute;
+    bottom: 0;
+}
+
+h1:hover > span {
+    top: 0;
+}
