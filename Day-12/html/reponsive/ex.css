@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+
+}
+
+.header {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+.header-menu  {
+    display: flex;
+    align-items:center ;
+    
+}
+.header-menu ul {
+    display: flex;
+}
+.header-menu ul li {
+    padding: 0 30px;
+}
+.header-menu ul li a ,
+.header-menu button a
+ {
+    color: black;
+    font-weight: 600;
+}
+.header-menu button {
+    padding: 10px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(0, 149, 255, 0.595);
+}
+.header-menu button a {
+    color: #fff;
+}
+.header-icon {
+    padding: 0 0 0 20px;
+    
+}
+.header-icon i {
+    font-size: 1.6rem;
+}
+.header-icon label {
+    font-size: 1.6rem;
+}
+
+.header input:checked ~ .header-menu ul{
+    visibility: inherit;
+    transform: translate(0px , 0px) ;
+    transition: transform 0.5s ease-in-out;
+}
+ .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgb(0, 0, 0,0.8);
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.3s ease;
+    transition-property:visibility,opacity ;
+}
+.header input:checked  ~ .overlay {
+   visibility: visible;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+@media screen and (max-width: 1199px){
+    .header-icon {
+        display: none;
+    }
+}
+@media screen and (max-width:767px){
+    .header {
+        max-width: 100%;
+    }
+   .header-menu ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.912);
+    width: 25%;
+    height: 100vh;
+    flex-direction: column;
+    line-height: 2.5;
+    visibility: hidden;
+    transform: translate(-100% , 0px) ;
+    transition: 0.5s ease-in-out;
+    z-index: 10;
+   }
+   .header-menu ul li a {
+    color: #fff;
+   }
+   .header-icon {
+    display: block;
+   }
+   .header-icon .header-icon-menu  {
+    display: block;
+}
+}
+@media screen and (max-width:575px){
+   .header .header-menu button {
+    display: none;
+   }
+}
