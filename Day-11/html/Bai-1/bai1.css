@@ -36,6 +36,9 @@ body {
     margin: 0px auto;
 
 }
+.header-respon {
+    display: flex;
+}
 .header label {
     display: none;
     
@@ -44,7 +47,7 @@ body {
     font-weight:500;
     color: #4d4d4d;
     margin-left: 50px;
-    height: max-content;
+    
 }
 .header-navbar a:hover {
     color: #f54b4b;
@@ -56,6 +59,7 @@ body {
 .header-search {
     display: flex;
     align-items: center;
+    margin-left: 50px;
 }
 .header-search .header-icon-search {
     display: flex;

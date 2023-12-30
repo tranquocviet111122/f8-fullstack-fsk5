@@ -42,12 +42,13 @@
       .header-respon-none {
         display: none;
         transform: translate(0, 100%);
-        transition: transform 0.5s ease-in-out;
+        transition-property:transform ;
+        transition: 2s all ease;
       }
       .header input:checked ~    .header-respon-none {
-        display: flex;
+        display: block;
         transform: translate(0 , 0);
-        transition:  2s ease-in-out;
+        transition: 2s all ease;
       }
     }
 
