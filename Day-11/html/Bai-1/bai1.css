@@ -207,6 +207,7 @@ body {
 
 /*  */
 .nav-item {
+
     margin-top: 5%;
     text-align: center;
     margin: 0px auto;
@@ -228,6 +229,8 @@ body {
     font-weight: 800;
     font-size: 35px;
 }
+
+
 
 
 
@@ -574,7 +577,7 @@ margin: 0 5px;
  }
 
  .footer-grow .grow {
-    max-width: calc(100% / 4);
+    width: calc(100% / 4);
     text-decoration: none;
  
  }
