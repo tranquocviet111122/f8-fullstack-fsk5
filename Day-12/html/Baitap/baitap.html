@@ -4,28 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Titillium+Web:wght@900&display=swap"
+        rel="stylesheet" />
     <title>Day-12</title>
     <link rel="stylesheet" href="baitap.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <div class="day-12">
-        <div class="login-register">
-            <div class="login-register-content">
-                <div class="content-logo">
-                    <img src="./img/logo.jpg" alt="logo">
+        <div class="login-register row">
+            <input type="radio" id="login" name="radio" checked hidden>
+            <input type="radio" id="register" name="radio" hidden>
+            <div class="col-xxl-6 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <section class="login-register-content">
+                    
+                    <div class="content-logo">
+                        <img src="./img/logo.jpg" alt="logo">
+                    </div>
+                    <h2>welcome to</h2>
+                    <h1>vikinger</h1>
+                    <p>The next generation social network & community! Connect with your friends and play with our quests and badges gamification system!</p>
+                    <div class="button row">
+                        <label for="login" class="button-login" >Login</label>
+                        <label for="register" class="button-register">Register</label>
+                    </div>
+                </section>           
+            </div>
+            <div class="col-xxl-6 pos col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                 <div class="login-login-form pos-login">
+                    <div class="form-fly">
+                        <img src="https://kzau1612.github.io/FSK5/day_12/img/rocket.webp" alt="phi thuyền">
+                    </div>
+                    <h2>creat your account!</h2>
+                    <form >
+                        <div class="form">
+                            <input class="form-input" type="text" >
+                            <label class="form-label" for="username">Your Email</label>
+                        </div>
+                        <div class="form">
+                            <input class="form-input" type="text" >
+                            <label class="form-label" for="username">Username </label>
+                        </div>
+                        
+                        <div class="form">
+                            <input class="form-input" type="text" >
+                            <label class="form-label" for="password" >Password</label>
+                        </div>
+                        <div class="form">
+                            <input class="form-input" type="text" >
+                            <label class="form-label" for="password" >Repeat Password</label>
+                        </div>
+                        <div class="remember row">
+                            <div class="remember-check">
+                                <input type="checkbox" name="checkbox" id="checkbox-1" hidden>
+                                <label for="checkbox-1">Send me news and update via email</label>
+                            </div>
+                         
+                        </div>
+                        <div class="btn-login">
+                            <button><a href="#!">
+                                Register Now!
+                            </a></button>
+                        </div>
+                        <div class="form-text">
+                            <p>You'll receive a confirmation email in your inbox with a link to activate your account. If you have any problems,
+                                <a href="#!"> contact us</a>
+                                !
+                            </p>
+                        </div>
+                      
+                    </form>
+                    
                 </div>
-                <h2>welcome to</h2>
-                <h1>vikinger</h1>
-                <p>The next generation social network & community! Connect with your friends and play with our quests and badges gamification system!</p>
-                <div class="button">
-                    <p class="button-login">Login</p>
-                    <p class="button-register">Register</p>
+                <div class="login-register-form pos-register">
+                    <div class="form-fly">
+                        <img src="https://kzau1612.github.io/FSK5/day_12/img/rocket.webp" alt="phi thuyền">
+                    </div>
+                    <h2>account login</h2>
+                    <form >
+                        <div class="form">
+                            <input class="form-input" type="text" >
+                            <label class="form-label" for="username">Username or Email</label>
+                        </div>
+                        <div class="form">
+                            <input class="form-input" type="text" >
+                            <label class="form-label" for="password" >Password</label>
+                        </div>
+                        <div class="remember row">
+                            <div class="remember-check">
+                                <input type="checkbox" name="checkbox" id="checkbox" hidden>
+                            <label for="checkbox">Remember Me</label>
+                            </div>
+                            <div class="remember-forgot">
+                                <a href="#!">Forgot Password?</a>
+                            </div>
+                        </div>
+                        <div class="btn-login">
+                            <button><a href="#!">
+                                Login to your Account!
+                            </a></button>
+                        </div>
+                        <div class="login-icons">
+                            <div class="login-icon-text">
+                                <p>Login with your Social Account</p>
+                            </div>
+                            <div class="login-icon">
+                                <a href="#!" class="fa-brands fa-facebook">
+                                   </a>
+                                <a href="#!" class="fa-brands fa-twitter">
+                                   
+                                </a>
+                                <a href="#!" class="fa-brands fa-twitch">
+                                    
+                                </a>
+                                <a href="#!" class="fa-brands fa-youtube">
+                                    
+                                </a>
+                
+                            </div>
+                        </div>
+                    </form>
+                    
                 </div>
             </div>
-            <div class="login-register-form"></div>
 
         </div>
     </div>
