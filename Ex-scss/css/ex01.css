@@ -1,0 +1,48 @@
+.header .header-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  color: blue;
+}
+.header .header-inner .menus {
+  display: flex;
+  text-transform: uppercase;
+  text-align: center;
+}
+.header .header-inner .menus li > a {
+  display: block;
+}
+.header .header-inner .menus li > a:hover {
+  display: flex;
+}
+.header .header-inner .logo {
+  padding: 10px;
+}
+.header .header-inner img {
+  max-width: 70%;
+}
+
+footer {
+  padding: 30px;
+  margin: 0;
+}
+
+.product, .post {
+  padding: 30px;
+  background: gray;
+}
+
+.post {
+  color: red;
+  max-width: 100px;
+  margin: 0 auto;
+  box-shadow: 5px 5px 10px #ccc;
+}
+
+.product {
+  color: red;
+  box-shadow: 5px 5px 10px #ccc;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=ex01.css.map */

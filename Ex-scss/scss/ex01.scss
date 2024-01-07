@@ -1,0 +1,32 @@
+@import "parts/variable";
+@import "parts/header";
+@import "parts/footer";
+
+
+
+%section-base {
+    padding: 30px;
+    background: gray;
+}
+@mixin section-base {
+    color: red;
+}
+
+@mixin center($width, $space: 0 ) {
+    max-width: $width;
+    margin: $space auto
+}
+
+.post {
+    // @extend : kế thừa 
+    @include section-base;
+    @extend %section-base;
+    @include center(100px);
+    box-shadow: 5px 5px 10px #ccc;
+}
+.product {
+    @extend %section-base;
+    @include section-base;
+    box-shadow: 5px 5px 10px #ccc;
+    border-radius: 20px;
+}

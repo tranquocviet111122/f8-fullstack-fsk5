@@ -1,0 +1,49 @@
+.header {
+    .header-inner{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 0;
+        color: $primaryColor;
+        $ismenu:false;
+        @if $ismenu == true {
+            .menu {
+                display: flex;
+                text: {
+                    transform: uppercase;
+                    align: center ;
+                }
+                li {
+                   > a {
+                        display: block;
+                        &:hover {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }@else {
+            .menus {
+                display: flex;
+                text: {
+                    transform: uppercase;
+                    align: center ;
+                }
+                li {
+                   > a {
+                        display: block;
+                        &:hover {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .logo {
+            padding: 10px;
+        }
+        img {
+            max-width: 70%;
+        }
+    }
+}
