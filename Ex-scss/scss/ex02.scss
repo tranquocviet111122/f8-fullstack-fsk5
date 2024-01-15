@@ -1,0 +1,88 @@
+$a:"f8";
+$b: 10;
+$c: 50;
+$d:color;
+.box {
+    // lưu ý biến 
+    /*trick*/
+    font-size: #{$b}px;
+    width: #{$c + 0%}  ;
+    #{$d}:#fff;
+}
+
+#{a} {
+    width: 100%;
+}
+##{a} {
+    width: 100%;
+}
+#{"." + a} {
+    width: 100%;
+}
+
+
+//Vòng lặp : Cú pháp trong lập trình, cho phép lặp đi lặp lại 1 đoạn chương trình
+//1. @for
+//2. @white   -> ít dùng
+//3. @each
+
+// vòng lặp for
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        width: 100% / (12 / $i);
+    }
+}
+@for $i from 12 to 1 {
+    .col-#{$i} {
+        width: 100% / (12 / $i);
+    }
+}
+// for if
+@for $i from 12 to 1 {
+    @if $i % 2 == 0 {
+        .col-#{$i} {
+            width: 100% / (12 / $i);
+        }
+    }
+   
+}
+
+// vòng lặp each
+
+// $sizes: 30, 40, 50 ,90; //mảng(array)
+// $index: 0;
+// @each $size in $sizes {
+    
+//     $index: $index + 1;
+
+//     .item-#{$size} {
+//        @if $index == length($sizes) {
+//         width: 100%;
+//        }@else {
+//         width: 2 * $size + 0%;
+//        }
+//     }
+// }
+
+
+$sizes: (small, normal, 40) (regular, bold, 60) (large,900,80);
+
+@each $type, $weight, $size, $u in $sizes  {
+    .#{$type} {
+        font-weight: $weight;
+        width: #{$size}px;
+    }
+}
+
+
+// key: value -> map
+
+$sizes: (
+    small: 40, regular: 60, large:80,
+);
+
+@each $type, $size in $sizes {
+    .colum-#{$type} {
+        width: #{$size}px;
+    }
+}

@@ -1,0 +1,42 @@
+@import "variables";
+@import "reset";
+@import "mixins";
+@import "placeholder";
+@import "base";
+@import "grid.scss";
+
+// Home
+
+@import "../pages/home/carousel";
+@import "../pages/home/products";
+@import "../pages/home/posts";
+
+// about
+
+@import "../pages/about/about";
+
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth; // Thuộc tính khi thay đôi thanh cuộn 
+}
+
+body {
+    font-family: $font;
+    color: $textColor;
+    line-height: 1.27;
+    font-size: $fontSize;
+}
+
+a {
+    text-decoration: none;
+    color: $linkColor;
+    &:hover {
+        color: $primaryColor;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
